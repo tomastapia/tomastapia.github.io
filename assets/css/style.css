@@ -1,0 +1,58 @@
+:root {
+    --blanco:             #ffffff;
+    --grisClaro:          #f2f2f2;
+    --grisMedio:          #c0c0c0;
+    --gris:               #474b4e;
+    --grisOscuro:         #2e2e2e;
+    --negro:              #000000;
+    --principal:          #27374D;
+    --principal-2:        #526D82;
+    --principal-3:        #9DB2BF;
+    --principal-4:        #DDE6ED;
+    --secundario:         #ff9300;
+    --secundario-oscuro:  #ac6a0f;
+  }
+
+/* GLOBALES */
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box; /* BOX MODEL REDIMENSION HACK */
+}
+*, *:before, *:after {
+    box-sizing: inherit; /* BOX MODEL REDIMENSION HACK */
+}
+body {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: sans-serif;
+}
+
+/* UTILIADADES */
+.sombra {
+    box-shadow: 2px 2px 15px 0px rgba(201,201,201,0.5);
+}
+.container {
+    max-width: 120rem;
+    margin: 0 auto 0 auto;
+}
+
+/* TIPOGRAFIAS */
+h1 {font-size: 3.8rem;}
+
+h2 {font-size: 2.8rem;}
+
+h3 {font-size: 1.8rem;}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* NAVEGACIÓN */
+.navegacion
+
+
+
+
+
+
+
