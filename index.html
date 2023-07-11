@@ -1,31 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sitio Tomás Tapia</title>
     <!-- STYLE.CSS -->
     <link rel="preload" href="assets/css/style.css" as="style">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- NORMALIZE.CSS -->
     <link rel="preload" href="assets/css/normalize.css" as="style">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <!-- ICONS FA -->
+    <script src="https://kit.fontawesome.com/a3af45c448.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="container">
-        <div class="navegacion">
+    <div class="container logotipo">
+        <a href="index.html">
+            <img src="assets/img/logo-negro.png" alt="logotipo" width="200">
+        </a>
+    </div> <!-- FIN LOGO -->
+
+    <nav class="bg-color">
+        <div class="navegacion container">
             <a class="navegacion__enlace" href="index.html">Inicio</a>
             <a class="navegacion__enlace" href="portafolio.html">Portafolio</a>
             <a class="navegacion__enlace" href="curriculum.html">Curriculum</a>
         </div>
-    </nav>
+    </nav>  <!-- FIN NAVEGACION -->
 
-    <header>
-
-    </header>
+    <header class="header">
+        <div class="container header__texto">
+            <h1 class="header__texto--h1">Diseño gráfico</h1>
+            <p class="header__texto--parrafo">Desarrollador en progreso...</p>
+        </div>
+    </header>   <!-- FIN HEADER -->
 
     <main>
+
+        <h2 class="habilidades">Habilidades</h2>
+
+        <section class="container comprar">
+
+            <div class="bloques">
+
+                <div class="bloque">
+                    <i class="fa-solid fa-pen-nib fa-2xl"></i>
+                    <h3 class="bloque__titulo">Diseños</h3>
+                    <p>Creación de diversas piezas gráficas impresas como pendones, flyers, carteles, catálogos, etc. y piezas gráficas digitales como banners, posts para redes sociales, edición de documentos y más.</p>
+                </div> <!-- FIN .BLOQUE -->
+    
+                <div class="bloque">
+                    <i class="fa-solid fa-video fa-2xl"></i>
+                    <h3 class="bloque__titulo">Videos</h3>
+                    <p>Producción de videos animados y motion graphics, para comunicar lo que desees de una forma rapida y sencilla, todo a traves de herramientas como Adobe After Effects, Adobe Premiere Pro o DaVinci Resolve.</p>
+                </div> <!-- FIN .BLOQUE -->
+    
+                <div class="bloque bloque__medio">
+                    <i class="fa-solid fa-cube fa-2xl"></i>
+                    <h3 class="bloque__titulo">Diseño 3D</h3>
+                    <p>Realización de modelados 3D para diferentes requerimientos como renders, impresiones 3D o videos animados, los modelados pueden ser organicos o para estructuras arquitectonicas.</p>
+                </div> <!-- FIN .BLOQUE -->
+            </div> <!-- FIN .BLOQUES -->
+        </section>
 
     </main>
     
