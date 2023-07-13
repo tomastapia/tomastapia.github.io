@@ -101,6 +101,15 @@ a {text-decoration: none;}
     padding: 0.5rem 0 0 1.5rem;
 }
 
+/* HEADER PORTAFOLIO */
+.header__portafolio {
+    background-image: url(../img/bg-hero-portafolio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20rem;
+}
+
 /* HABILIDADES ICONOS */
 .habilidades__titulo {
     text-align: center;
@@ -155,7 +164,8 @@ a {text-decoration: none;}
 .proyecto__cards {
     display: grid;
     column-gap: 3rem;
-    padding: 3rem;
+    row-gap: 1.3rem;
+    padding: 2rem;
 }
 .proyecto__card {
     border: var(--grisMedio) solid 1px;
@@ -213,6 +223,7 @@ a {text-decoration: none;}
     border: var(--gris) solid 1px;
 }
 .btn-portafolio{
+    font-size: 2rem;
     font-weight: bold;
     color: var(--blanco);
     background-color: transparent;
@@ -237,6 +248,21 @@ a.btn-portafolio {
     background-color: var(--grisClaro);
     border: none;
 }
+/* EXPERIENCIA */
+@media (min-width: 768px) {
+    .experiencia {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+.experiencia__texto {
+    text-align: center;
+}
+.experiencia__texto h2 {
+    margin-top: 5rem;
+}
+
+
 
 /* FOOTER */
 .footer {
@@ -246,7 +272,7 @@ a.btn-portafolio {
     align-items: center;
     color: var(--blanco);
     padding: 5rem 3rem 20rem 3rem;
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 .footer__texto {
     font-weight: 400;
@@ -260,3 +286,11 @@ a.btn-portafolio {
     color: var(--secundario);
 }
 footer a:visited {color: var(--blanco);}
+
+/* PORTAFOLIO */
+@media (min-width: 768px) { 
+    .grid__card {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+}
