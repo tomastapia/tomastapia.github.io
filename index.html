@@ -15,7 +15,7 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -36,14 +36,16 @@
 
     <header class="header">
         <div class="container header__texto">
-            <h1 class="header__texto--h1">Diseño gráfico</h1>
+            <h1 class="header__texto--h1">Diseñador gráfico<span class="color-sec">_</span></h1>
             <p class="header__texto--parrafo">Desarrollador en progreso...</p>
+            <br><br>
+            <a class="btn-portafolio" href="portafolio.html">Portafolio</a>
         </div>
     </header>   <!-- FIN HEADER -->
 
     <main>
 
-        <h2 class="habilidades">Habilidades</h2>
+        <h2 class="habilidades__titulo">Habilidades<span class="color-sec">_</span></h2>
 
         <section class="container comprar">
 
@@ -69,8 +71,58 @@
             </div> <!-- FIN .BLOQUES -->
         </section>
 
+        <hr class="division">
+
         <section>
-            
+            <h2 class="proyecto__titulo">Proyectos Web<span class="color-sec">_</span></h2>
+
+            <div class="proyecto__cards container">
+
+                <a href="#">
+                    <div class="proyecto__card">
+                        <div>
+                            <img class="proyecto__imagen" src="assets/img/card-1.jpg" alt="proyecto 1">
+                        </div>
+                        <div class="proyecto__texto">
+                            <h3>Website de viajes</h3>
+                            <p>Sitio web de ejercicio para la práctica básica de HTML y CSS</p>
+                            <p>Calificación: <span class="calificacion__texto"><span class="color-sec">9</span> / 10</span></p>
+                        </div>
+                    </div> <!-- FIN BLOQUE -->
+                </a>
+
+                <a href="#">
+                    <div class="proyecto__card">
+                        <div>
+                            <img class="proyecto__imagen" src="assets/img/card-2.jpg" alt="proyecto 2">
+                        </div>
+                        <div class="proyecto__texto">
+                            <h3>Landing Iguana</h3>
+                            <p>Landing page creado con el fin de practicar los atributos del display Flexbox</p>
+                            <p>Calificación: <span class="calificacion__texto"><span class="color-sec">10</span> / 10</span></p>
+                        </div>
+                    </div> <!-- FIN BLOQUE -->
+                </a>
+
+                <a href="#">
+                    <div class="proyecto__card">
+                        <div>
+                            <img class="proyecto__imagen" src="assets/img/card-3.jpg" alt="proyecto 3">
+                        </div>
+                        <div class="proyecto__texto">
+                            <h3>Cuppon Bootstrap</h3>
+                            <p>Landing page creado con el fin de practicar los atributos del display Flexbox</p>
+                            <p>Calificación: <span class="calificacion__texto"><span class="color-sec">10</span> / 10</span></p>
+                        </div>
+                    </div> <!-- FIN BLOQUE -->
+                </a>
+
+            </div>
+
+            <div class="container-center">
+                <a class="btn-portafolio-2" href="portafolio.html">Más Proyectos</a>
+            </div>
+
         </section>
         
 
@@ -78,13 +130,21 @@
     
     <footer class="bg-color">
         <div class="container footer">
+
             <div>
                 <p class="footer__texto"><i class="fa-regular fa-envelope"></i> tomastapia@gmail.com</p>
+                <br>
+                <p class="footer__texto">Tomás Tapia</p>
+                <br>
+                <a href="https://empieza.desafiolatam.com" target="_blank" class="footer__texto">Desafío Latam</a>
             </div>
+
             <div>
                 <a class="footer__icon" target="_blank" href="https://www.linkedin.com/in/tapiatomas/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
                 <a class="footer__icon" target="_blank" href="https://www.instagram.com/robotchiquen/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a class="footer__icon" target="_blank" href="https://github.com/tomastapia"><i class="fa-brands fa-github fa-xl"></i></a>
             </div>
+
         </div>
     </footer>
 

@@ -24,19 +24,22 @@ html {
 }
 body {
     font-size: 16px; /* 1rem = 10px */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* UTILIADADES */
-.sombra {
-    box-shadow: 2px 2px 15px 0px var(--negro);
-}
 .container {
     max-width: 120rem;
     margin: 0 auto;
 }
+.container-center {
+    text-align: center;
+}
 .bg-color {
     background-color: var(--principal);
+}
+.color-sec {
+    color: var(--secundario);
 }
 
 /* TIPOGRAFIAS */
@@ -44,8 +47,7 @@ h1 {font-size: 3.8rem;}
 h2 {font-size: 2.8rem;}
 h3 {font-size: 1.8rem;}
 p {margin: 0;}
-
-A:visited {color: var(--blanco);}
+a {text-decoration: none;}
 
 /* NAVEGACIÓN */
 .logotipo {
@@ -82,7 +84,7 @@ A:visited {color: var(--blanco);}
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 30rem;
+    height: 50rem;
 }
 .header__texto {
     font-size: 2.3rem;
@@ -90,20 +92,19 @@ A:visited {color: var(--blanco);}
 .header__texto--h1 {
     color: var(--blanco);
     margin: 0;
-    padding: 4.8rem 0 0 4rem;
-    text-transform: uppercase;
+    padding: 4.8rem 0 0 1.5rem;
 }
 .header__texto--parrafo {
+    font-size: 2.7rem;
     color: var(--secundario);
     margin: 0;
-    padding: 0.5rem 0 0 4rem;
+    padding: 0.5rem 0 0 1.5rem;
 }
 
-/* ICONOS */
-.habilidades {
+/* HABILIDADES ICONOS */
+.habilidades__titulo {
     text-align: center;
     color: var(--principal);
-    text-transform: uppercase;
     padding-bottom: 3rem;
     font-size: 4.5rem;
 }
@@ -138,6 +139,105 @@ A:visited {color: var(--blanco);}
     }
 }
 
+/* PROYECTOS */
+.proyecto__titulo {
+    text-align: center;
+    color: var(--principal);
+    font-size: 4.5rem;
+}
+@media (min-width: 768px) { 
+    .proyecto__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+.proyecto__cards {
+    display: grid;
+    column-gap: 3rem;
+    padding: 3rem;
+}
+.proyecto__card {
+    border: var(--grisMedio) solid 1px;
+    border-radius: .6rem;
+    transition: .2s ease;
+    margin-bottom: 2rem;
+}
+.proyecto__card:hover {
+    border: var(--grisMedio) solid 1px;
+    border-radius: .6rem;
+    box-shadow: 2px 2px 15px 0px var(--grisMedio);
+}
+.proyecto__imagen {
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: .6rem;
+    border-top-right-radius: .6rem;
+}
+.proyecto__texto {
+    margin: 2rem;
+}
+.proyecto__texto h3 {
+    color: var(--gris);
+    margin: 0;
+    padding-bottom: 1.5rem;
+}
+.proyecto__texto p {
+    color: var(--gris);
+    margin: 0;
+    padding-bottom: 1.5rem;
+}
+.calificacion__texto {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.calificacion__texto {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* BOTONES */
+.btn-portafolio-2 {
+    font-weight: bold;
+    color: var(--gris);
+    background-color: transparent;
+    padding: 1rem 4rem;
+    border: var(--gris) solid 1px;
+    border-radius: 5rem;
+    transition: .2s ease;
+}
+.btn-portafolio-2:hover {
+    color: var(--blanco);
+    background-color: var(--principal);
+    padding: 1rem 5rem;
+    border: var(--gris) solid 1px;
+}
+.btn-portafolio{
+    font-weight: bold;
+    color: var(--blanco);
+    background-color: transparent;
+    padding: .8rem 3rem;
+    border: var(--blanco) solid 1px;
+    border-radius: 5rem;
+    transition: .2s ease;
+}
+.btn-portafolio:hover {
+    color: var(--blanco);
+    background-color: var(--secundario);
+    border: var(--secundario) solid 1px;
+}
+a.btn-portafolio {
+    margin-left: 1.5rem;
+}
+
+/* DIVISION SECCIONES */
+.division {
+    margin: 5rem 0;
+    padding: 3rem;
+    background-color: var(--grisClaro);
+    border: none;
+}
+
 /* FOOTER */
 .footer {
     display: flex;
@@ -145,12 +245,18 @@ A:visited {color: var(--blanco);}
     gap: 5rem;
     align-items: center;
     color: var(--blanco);
-    padding: 5rem;
-    margin-top: 5rem;
+    padding: 5rem 3rem 20rem 3rem;
+    margin-top: 10rem;
 }
 .footer__texto {
+    font-weight: 400;
     font-size: 2rem;
 }
 .footer__icon {
+    color: var(--blanco);
     padding: 1rem;
 }
+.footer__icon:hover {
+    color: var(--secundario);
+}
+footer a:visited {color: var(--blanco);}
