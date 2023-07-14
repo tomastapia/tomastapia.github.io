@@ -18,6 +18,7 @@
 html {
     font-size: 62.5%; /* 1rem = 10px */
     box-sizing: border-box; /* BOX MODEL REDIMENSION HACK */
+    scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit; /* BOX MODEL REDIMENSION HACK */
@@ -70,17 +71,46 @@ a {text-decoration: none;}
 .navegacion__enlace:hover {
     background-color: var(--principal-2);
 }
+@media (max-width: 768px) { 
+    .display-none {
+        display: none;
+    }
+    .navegacion__enlaces {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
 @media (min-width: 768px) { 
-    .navegacion {
+
+    .container-flex {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        padding-right: 1.5rem;
+    }
+    .navegacion__enlaces {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 5rem;
+    }
+    .navegacion__iconos {
+        display: end;
+    }
+    .navegacion__icon {
+        color: var(--blanco);
+        padding: 1rem;
+    }
+    .navegacion__icon:hover {
+        color: var(--secundario);
     }
 }
 
 /* HEADER */
 .header {
-    background-image: url(../img/bg-hero.jpg);
+    background-image: url(../img/bg-hero-cv.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -252,17 +282,31 @@ a.btn-portafolio {
 @media (min-width: 768px) {
     .experiencia {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 4rem;
     }
 }
+.experiencia__caja {
+    background-color: var(--blanco);
+    padding: 4rem 4rem;
+    margin-bottom: 4rem;
+    border-radius: .6rem;
+    box-shadow: 2px 2px 15px 0px var(--grisMedio);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.7rem;
+    transition: all .3s ease;
+}
+.experiencia__caja:hover {
+    padding: 4rem 6rem;
+}
 .experiencia__texto {
+    color: var(--principal);
     text-align: center;
 }
 .experiencia__texto h2 {
-    margin-top: 5rem;
+    margin-top: 0rem;
 }
-
-
 
 /* FOOTER */
 .footer {
