@@ -147,7 +147,7 @@ a {text-decoration: none;color: var(--blanco);}
     height: 20rem;
 }
 
-/* HABILIDADES ICONOS */
+/* HABILIDADES */
 .habilidades__titulo {
     text-align: center;
     color: var(--principal);
@@ -183,6 +183,28 @@ a {text-decoration: none;color: var(--blanco);}
         grid-column: 3 / 4;
         grid-row: 1 / 2;
     }
+}
+
+.programas {
+    display: flex;
+    justify-content: center;
+}
+.programas__bloques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+.programas__bloque {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--blanco);
+    border-radius: .6rem;
+    padding: 2.5rem 3rem;
+    box-shadow: 2px 2px 15px 0px var(--grisMedio);
+    width: 35rem;
 }
 
 /* PROYECTOS */
@@ -326,6 +348,7 @@ a.btn-portafolio {
     margin-top: 15rem;
 }
 .footer__texto {
+    color: var(--blanco);
     font-weight: 400;
     font-size: 2rem;
 }
