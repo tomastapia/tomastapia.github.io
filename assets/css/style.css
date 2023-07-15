@@ -46,7 +46,7 @@ body {
     color: var(--secundario);
 }
 .iframe-border {
-    border-radius: 1.5rem;
+    border-radius: 1.3rem;
     box-shadow: 2px 2px 15px 0px var(--grisMedio);
 }
 
@@ -184,7 +184,6 @@ a {text-decoration: none;color: var(--blanco);}
         grid-row: 1 / 2;
     }
 }
-
 .programas {
     display: flex;
     justify-content: center;
@@ -194,6 +193,7 @@ a {text-decoration: none;color: var(--blanco);}
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
+    margin-bottom: 7rem;
 }
 .programas__bloque {
     display: flex;
@@ -201,10 +201,19 @@ a {text-decoration: none;color: var(--blanco);}
     gap: 1rem;
     align-items: center;
     background-color: var(--blanco);
-    border-radius: .6rem;
+    border: solid 1px var(--blanco);
+    border-radius: 1rem;
     padding: 2.5rem 3rem;
     box-shadow: 2px 2px 15px 0px var(--grisMedio);
     width: 35rem;
+    transition: all .2s ease;
+}
+.programas__bloque:hover {
+    background-color: #f6f6f6;
+    padding: 2.5rem 3rem;
+    box-shadow: none;
+    width: 39rem;
+    border: solid 1px var(--grisMedio);
 }
 
 /* PROYECTOS */
@@ -266,21 +275,6 @@ a {text-decoration: none;color: var(--blanco);}
 }
 
 /* BOTONES */
-.btn-portafolio-2 {
-    font-weight: bold;
-    color: var(--gris);
-    background-color: transparent;
-    padding: 1rem 4rem;
-    border: var(--gris) solid 1px;
-    border-radius: 5rem;
-    transition: .2s ease;
-}
-.btn-portafolio-2:hover {
-    color: var(--blanco);
-    background-color: var(--principal);
-    padding: 1rem 5rem;
-    border: var(--gris) solid 1px;
-}
 .btn-portafolio{
     font-size: 2rem;
     font-weight: bold;
@@ -298,6 +292,21 @@ a {text-decoration: none;color: var(--blanco);}
 }
 a.btn-portafolio {
     margin-left: 1.5rem;
+}
+.btn-portafolio-2 {
+    font-weight: bold;
+    color: var(--gris);
+    background-color: transparent;
+    padding: 1rem 4rem;
+    border: var(--gris) solid 1px;
+    border-radius: 5rem;
+    transition: .2s ease;
+}
+.btn-portafolio-2:hover {
+    color: var(--blanco);
+    background-color: var(--principal);
+    padding: 1rem 5rem;
+    border: var(--gris) solid 1px;
 }
 
 /* DIVISION SECCIONES */
@@ -319,7 +328,7 @@ a.btn-portafolio {
     background-color: var(--blanco);
     padding: 4rem 4rem;
     margin-bottom: 4rem;
-    border-radius: .6rem;
+    border-radius: 1rem;
     box-shadow: 2px 2px 15px 0px var(--grisMedio);
     margin-left: 2rem;
     margin-right: 2rem;
@@ -341,8 +350,6 @@ a.btn-portafolio {
 .footer {
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
-    align-items: center;
     color: var(--blanco);
     padding: 5rem 3rem 20rem 3rem;
     margin-top: 15rem;
@@ -351,6 +358,9 @@ a.btn-portafolio {
     color: var(--blanco);
     font-weight: 400;
     font-size: 2rem;
+}
+.footer a:hover {
+    color: var(--secundario);
 }
 .footer__icon {
     color: var(--blanco);
