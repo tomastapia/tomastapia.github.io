@@ -327,15 +327,19 @@ a.btn-portafolio {
     background-color: var(--blanco);
     padding: 4rem 4rem;
     margin-bottom: 4rem;
+    border: solid 1px var(--blanco);
     border-radius: 1rem;
     box-shadow: 2px 2px 15px 0px var(--grisMedio);
     margin-left: 2rem;
     margin-right: 2rem;
     font-size: 1.7rem;
-    transition: all .3s ease;
+    transition: all .2s ease;
 }
 .experiencia__caja:hover {
-    padding: 4rem 6rem;
+    padding: 4rem 7rem;
+    background-color: #f6f6f6;
+    box-shadow: none;
+    border: solid 1px var(--grisMedio);
 }
 .experiencia__texto {
     color: var(--principal);
